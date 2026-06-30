@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jaspreet Kaur — Portfolio
 
-## Getting Started
+A dark-themed, animated developer portfolio built with Next.js 15, TypeScript, and Tailwind CSS v4 — inspired by modern portfolio sites with typing hero text, scroll-reveal sections, and a glassmorphism aesthetic.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Option A — GitHub (recommended)**
+1. Push this folder to a new GitHub repo.
+2. Go to vercel.com → New Project → Import your repo.
+3. Leave all settings as default (Next.js is auto-detected) → Deploy.
 
-## Learn More
+**Option B — Vercel CLI**
+```bash
+npm i -g vercel
+vercel
+```
+Follow the prompts; it deploys straight from this folder.
 
-To learn more about Next.js, take a look at the following resources:
+## Customize
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Your info / sections**: edit the components in `src/components/` — `Hero.tsx`, `About.tsx`, `Skills.tsx`, `Projects.tsx`, `Experience.tsx`, `Contact.tsx`.
+- **Colors / theme**: change the CSS variables at the top of `src/app/globals.css` (`--accent`, `--accent2`, `--accent3`, `--bg`, etc.)
+- **Resume download**: drop a `resume.pdf` file into the `public/` folder — the "Download CV" button in the About section already links to `/resume.pdf`.
+- **Metadata / SEO**: edit `src/app/layout.tsx`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech stack
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · CSS-only animations (no external animation libraries needed)
