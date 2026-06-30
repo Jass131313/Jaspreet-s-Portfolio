@@ -5,7 +5,7 @@ const stats = [
   { value: "2+", label: "Projects Shipped" },
   { value: "5+", label: "RTK Query Slices" },
   { value: "3", label: "AI Integrations" },
-  { value: "8.56", label: "SGPA" },
+  { value: "8.94", label: "SGPA" },
 ];
 
 export default function About() {

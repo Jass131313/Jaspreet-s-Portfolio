@@ -2,10 +2,9 @@
 import { useEffect, useRef } from "react";
 
 const contacts = [
-  { label: "Email", value: "jk0006914008@gmail.com", href: "mailto:jk0006914008@gmail.com", icon: "✉" },
+  { label: "Github", value: "Jass131313", href: "https://github.com/Jass131313", icon: "💻" },
   { label: "Phone", value: "+91 62802-83455", href: "tel:+916280283455", icon: "📞" },
   { label: "LinkedIn", value: "jaspreet-kaur-a37b97228", href: "https://linkedin.com/in/jaspreet-kaur-a37b97228", icon: "🔗" },
-  { label: "Location", value: "Mohali, Punjab, India", href: null, icon: "📍" },
 ];
 
 export default function Contact() {
