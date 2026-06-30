@@ -1,10 +1,11 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { FaGithub, FaLinkedin, FaPhone } from "react-icons/fa6";
 
 const contacts = [
-  { label: "Github", value: "Jass131313", href: "https://github.com/Jass131313", icon: "💻" },
-  { label: "Phone", value: "+91 62802-83455", href: "tel:+916280283455", icon: "📞" },
-  { label: "LinkedIn", value: "jaspreet-kaur-a37b97228", href: "https://linkedin.com/in/jaspreet-kaur-a37b97228", icon: "🔗" },
+  { label: "GitHub", value: "Jass131313", href: "https://github.com/Jass131313", icon: <FaGithub /> },
+  { label: "Phone", value: "+91 62802-83455", href: "tel:+916280283455", icon: <FaPhone />},
+  { label: "LinkedIn", value: "jaspreet-kaur-a37b97228", href: "https://linkedin.com/in/jaspreet-kaur-a37b97228", icon: <FaLinkedin /> },
 ];
 
 export default function Contact() {
