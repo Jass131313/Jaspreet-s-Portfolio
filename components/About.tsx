@@ -35,7 +35,7 @@ export default function About() {
           {/* Text */}
           <div className="reveal">
             <p style={{ fontSize: 16, color: "#94a3b8", lineHeight: 1.8, marginBottom: 20 }}>
-              I&apos;m a <span style={{ color: "#0fd9b4", fontWeight: 600 }}>Full Stack Developer Intern</span> at{" "}
+              I&apos;m a <span style={{ color: "#0fd9b4", fontWeight: 600 }}>Full Stack Developer Trainee</span> at{" "}
               <span style={{ color: "#e2e8f0", fontWeight: 600 }}>Nugen I.T. Services, Mohali</span>, working with
               modern web technologies to build real, production-grade products.
             </p>
